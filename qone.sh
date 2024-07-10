@@ -21,7 +21,7 @@ upgrade_qone() {
         echo "⌛️ Upgrading the qone.sh script... just one minute!"
         sleep 3
         echo "ℹ️ Downloading qone_setup.sh..."
-        if ! wget -qO- https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/qone_setup.sh | bash; then
+        if ! wget -qO- https://raw.gitmirror.com/lamat1111/QuilibriumScripts/main/qone_setup.sh | bash; then
             echo "❌ Error: Failed to download and execute qone-setup.sh"
             return 1
         else
@@ -132,18 +132,18 @@ NODE_BINARY=node-$version-$release_os-$release_arch
 #=====================
 
 # URLs for scripts
-UPDATE_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/master/qnode_service_update.sh"
-PREREQUISITES_URL="https://raw.githubusercontent.com/lamat1111/quilibriumscripts/master/server_setup.sh"
-NODE_INSTALL_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/master/qnode_service_installer.sh"
-GRPCURL_CONFIG_URL="https://raw.githubusercontent.com/lamat1111/quilibriumscripts/master/tools/qnode_gRPC_calls_setup.sh"
-NODE_UPDATE_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/master/qnode_service_update.sh"
-PEER_MANIFEST_URL="https://raw.githubusercontent.com/lamat1111/quilibriumscripts/master/tools/qnode_peermanifest_checker.sh"
-CHECK_VISIBILITY_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/master/tools/qnode_visibility_check.sh"
-SYSTEM_CLEANER_URL="https://raw.githubusercontent.com/lamat1111/quilibrium-node-auto-installer/master/tools/qnode_system_cleanup.sh"
-BACKUP_STORJ_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/tools/qnode_backup_storj.sh"
-BACKUP_RESTORE_STORJ_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/tools/qnode_backup_restore_storj.sh"
-BALANCE_LOG_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/tools/qnode_balance_checker_installer.sh"
-TEST_URL="https://raw.githubusercontent.com/lamat1111/QuilibriumScripts/main/test/test_script.sh"
+UPDATE_URL="https://raw.gitmirror.com/lamat1111/QuilibriumScripts/master/qnode_service_update.sh"
+PREREQUISITES_URL="https://raw.gitmirror.com.com/lamat1111/quilibriumscripts/master/server_setup.sh"
+NODE_INSTALL_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/master/qnode_service_installer.sh"
+GRPCURL_CONFIG_URL="https://raw.gitmirror.com.com/lamat1111/quilibriumscripts/master/tools/qnode_gRPC_calls_setup.sh"
+NODE_UPDATE_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/master/qnode_service_update.sh"
+PEER_MANIFEST_URL="https://raw.gitmirror.com.com/lamat1111/quilibriumscripts/master/tools/qnode_peermanifest_checker.sh"
+CHECK_VISIBILITY_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/master/tools/qnode_visibility_check.sh"
+SYSTEM_CLEANER_URL="https://raw.gitmirror.com.com/lamat1111/quilibrium-node-auto-installer/master/tools/qnode_system_cleanup.sh"
+BACKUP_STORJ_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/main/tools/qnode_backup_storj.sh"
+BACKUP_RESTORE_STORJ_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/main/tools/qnode_backup_restore_storj.sh"
+BALANCE_LOG_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/main/tools/qnode_balance_checker_installer.sh"
+TEST_URL="https://raw.gitmirror.com.com/lamat1111/QuilibriumScripts/main/test/test_script.sh"
 
 # Common message for missing service file
 MISSING_SERVICE_MSG="⚠️ Your service file does not exist. Looks like you do not have a node running as a service yet!"
